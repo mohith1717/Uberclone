@@ -1,0 +1,101 @@
+// body{
+//     margin: 0;
+//     padding: 0;
+//     background-color: ;
+// }
+.portfolio{
+    position: relative;
+    background-color: white;
+    z-index: 10;
+    // height: 100vh;
+    .progress{
+        background-color: white;
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+        // margin-bottom: 9px;
+        .progressbar{
+            // margin-top: 30px;
+            height: 10px;
+            background-color: green;
+        }
+    }
+
+    .container{
+        // margin-left: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        
+        
+        .wrapper{
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .imgcontainer{
+                height: 50%;
+
+                flex:1;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+            }
+            .textcontainer{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                h2{
+                    font-size: 60px;
+                }
+                p{
+                    color: gray;
+                    font-size: 22px;
+                }
+                .butto{
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    flex-direction: column;
+                    .first{
+                        background-color: orange;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 20px;
+                        width: 200px;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                    .second{
+                        border: none;
+                        margin-left: 10px;
+                        background: transparent;
+                        &:hover{
+                            // font-size: large;
+                          color: black;
+                            font-size:18px;
+                        }
+
+                    }
+                }
+                
+            }
+        }
+        }
+}
